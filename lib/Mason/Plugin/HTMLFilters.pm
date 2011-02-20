@@ -1,6 +1,6 @@
 package Mason::Plugin::HTMLFilters;
 BEGIN {
-  $Mason::Plugin::HTMLFilters::VERSION = '0.01';
+  $Mason::Plugin::HTMLFilters::VERSION = '0.02';
 }
 use Moose;
 with 'Mason::Plugin';

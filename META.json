@@ -26,7 +26,8 @@
       },
       "runtime" : {
          "requires" : {
-            "HTML::FillInForm" : "2.00"
+            "HTML::FillInForm" : "2.00",
+            "Mason" : "2.00"
          }
       },
       "test" : {
@@ -47,6 +48,6 @@
          "web" : "https://github.com/jonswar/perl-mason-plugin-htmlfilters"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

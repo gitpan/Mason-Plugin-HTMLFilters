@@ -22,9 +22,10 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Mason::Plugin::HTMLFilters',
   'PREREQ_PM' => {
-    'HTML::FillInForm' => '2.00'
+    'HTML::FillInForm' => '2.00',
+    'Mason' => '2.00'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,6 +1,6 @@
 package Mason::Plugin::HTMLFilters::Filters;
 BEGIN {
-  $Mason::Plugin::HTMLFilters::Filters::VERSION = '0.01';
+  $Mason::Plugin::HTMLFilters::Filters::VERSION = '0.02';
 }
 use Mason::PluginRole;
 
