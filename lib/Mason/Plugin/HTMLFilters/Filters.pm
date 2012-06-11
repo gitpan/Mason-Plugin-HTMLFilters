@@ -1,6 +1,6 @@
 package Mason::Plugin::HTMLFilters::Filters;
 BEGIN {
-  $Mason::Plugin::HTMLFilters::Filters::VERSION = '0.02';
+  $Mason::Plugin::HTMLFilters::Filters::VERSION = '0.03';
 }
 use Mason::PluginRole;
 
@@ -48,12 +48,12 @@ method HTMLParaBreak () {
     };
 }
 
-method FillInForm ($fdat) {
+method FillInForm ($form_data, %options) {
     require HTML::FillInForm;
     sub {
         my $html = $_[0];
-        return $html if !defined($fdat);
-        return HTML::FillInForm->fill( \$html, $fdat );
+        return $html if !defined($form_data);
+        return HTML::FillInForm->fill( \$html, $form_data, %options );
     };
 }
 
